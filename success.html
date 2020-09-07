@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Title</title>
+    <style>
+        .example {
+            padding: 20px;
+            color: white;
+        }
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            .example {background: red;}
+            .example::after{content: " - Is MobilePhone";}
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            .example {background: green;}
+            .example::after{content: " - Is LargeMobilePhone";}
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .example {background: blue;}
+            .example::after{content: " - Is Pad";}
+        } 
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            .example {background: orange;}
+            .example::after{content: " - Is LargePad";}
+        } 
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            .example {background: pink;}
+            .example::after{content: " - Is Computer";}
+        }
+    </style>
+</head>
+<body>
+    <h1 class="example">LoginSucess</h1>
+</body>
+</html>
